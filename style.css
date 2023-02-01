@@ -1,0 +1,415 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+body {
+  background-color: black;
+  overflow-x: hidden;
+}
+
+.navbar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem;
+}
+
+.navbar::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: -1;
+}
+
+.logo h4 {
+  font-size: 1.5rem;
+}
+
+.red {
+  color: #ff0000;
+}
+
+.navlinks{
+  display: flex;
+}
+
+.navlinks ul {
+  display: flex;
+}
+
+.navlinks ul li {
+  list-style: none;
+}
+
+.navlinks ul li a {
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+.navlinks ul li a:hover {
+  color: #ff0000;
+}
+
+.contactMe {
+  padding: 0.5rem 1rem;
+  border-color: #ff0000;
+  cursor: pointer;
+  color: #ff0000;
+  background: transparent;
+}
+
+.contactMe:hover {
+  cursor: pointer;
+  color: #fff;
+}
+
+.menu {
+  display: none;
+  cursor: pointer;
+}
+
+.links {
+  height: 0;
+  overflow: hidden;
+}
+
+.showLinks {
+  height: 10rem;
+  overflow: visible;
+}
+
+.links ul li {
+  list-style: none;
+}
+
+.links ul li a {
+  text-decoration: none;
+  margin-bottom: 1rem;
+}
+
+/* hero */
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7rem;
+}
+
+.hero::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100vh;
+  background-image: url(images/bg-1.jpg);
+  z-index: -1;
+  opacity: 0.2;
+}
+
+.hero .image {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  /* padding: 0.25rem; */
+  background-color: #ff0000;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.wrap {
+  width: max-content;
+  margin: 0.5rem auto;
+}
+
+.typing {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px soild white;
+  padding-right: 5px;
+  animation: typing 4s steps(20) infinite alternate, blink 0.7s infinite;
+}
+
+.typing p {
+  font-size: 1.15rem;
+}
+
+@keyframes typing {
+  0% {
+    width: 0%;
+    visibility: hidden;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+  100% {
+    border-color: black;
+  }
+}
+
+.media-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.media-icons i {
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.media-icons i:hover {
+  opacity: 1;
+}
+
+/* about */
+.about-container {
+  padding: 3rem;
+  margin-top: 11rem;
+  /* background-color: rgb(218, 233, 7); */
+}
+.about {
+  justify-content: space-around;
+  display: flex;
+  width: 90%;
+  margin: 3rem auto;
+}
+
+.head {
+  font-weight: 700;
+  font-size: 0.75rem;
+}
+
+.about .about-img {
+  width: 30%;
+  height: 300px;
+  /* background-color: rgb(110, 218, 23); */
+}
+
+.about .about-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-content {
+  width: 60%;
+  /* background-color: rgb(44, 94, 3); */
+}
+
+.about-body p {
+  margin-top: 1.5rem;
+  font-size: 0.75rem;
+}
+
+.about-footer {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+  padding: 3rem 1rem;
+  border: 1px solid #ff0000;
+  border-radius: 0.25rem;
+}
+
+.about-footer p {
+  font-size: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.download {
+  margin-top: 1rem;
+  color: white;
+  background-color: #ff0000;
+}
+
+
+
+/* services */
+.services {
+  /* background-color: rgb(110, 218, 23); */
+  display: flex;
+  flex-direction: column;
+  padding: 0rem 3rem;
+  margin-bottom: 3rem;
+}
+
+.service-header {
+  padding-left: 5.75rem;
+}
+
+.card-group {
+  width: 90%;
+  margin: 3rem auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card {
+  width: 30%;
+  border: 1px solid #ff0000;
+  padding: 2rem 2rem;
+}
+
+.services-icon i {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.services-heading h4 {
+  margin-bottom: 1rem;
+}
+
+.services-content p {
+  font-size: 0.75rem;
+}
+
+/* footer */
+.footer-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+border-top: 1px solid #fff;
+
+}
+
+.footer-heading h4{
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+  margin-top: 3rem;
+}
+
+.footer-body p{
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  letter-spacing: 0.5rem;
+  text-transform: capitalize;
+}
+
+.footer-footer ul{
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.footer-footer ul li{
+  list-style: none;
+}
+
+.footer-footer ul li a{
+  text-decoration: none;
+  padding-right: 1rem;
+}
+
+.footer-footer ul li a:hover{
+color: #ff0000;
+}
+
+
+
+/* responsive */
+@media (max-width: 768px) {
+  /* navbar */
+  .navlinks {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  /* about */
+  .about {
+    display: flex;
+    flex-direction: column;
+   
+    width: 100%;
+  }
+
+  .about .about-img {
+    width: 100%;
+    margin-bottom: 3rem;
+    margin-right: 0;
+  }
+
+  .about .about-img img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .about .about-content {
+    width: 100%;
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+
+  .about-footer {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ff0000;
+  }
+
+  .card-group {
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    align-content: space-around;
+  }
+
+  .card {
+    margin-bottom: 3rem;
+    width: 100%;
+  }
+
+  .service-header {
+    padding-left: 1rem;
+  }
+
+  /* /footer */
+
+
+
+  .footer-footer ul{
+    display: flex;
+    flex-direction: column;
+justify-content: center;
+align-items: center;
+  }
+
+  .footer-footer ul li{
+    padding-bottom: 0.5rem;
+  }
+}
+
+/* .reveal{
+  position: relative;
+  transform: translateX(150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+.reveal.active{
+  transform: translateX(0);
+  opacity: 1;
+} */
