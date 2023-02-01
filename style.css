@@ -252,11 +252,12 @@ body {
   padding: 0rem 3rem;
   margin-bottom: 3rem;
 }
-.services-header{
-width: 90%;
+.service-header{
 display: flex;
 flex-direction: column;
-
+/* background-color: rgb(146, 218, 32); */
+justify-content: start;
+padding: 0rem 5.5rem;
 }
 
 
@@ -265,6 +266,7 @@ flex-direction: column;
   margin: 3rem auto;
   display: flex;
   justify-content: space-evenly;
+  /* background-color: rgb(146, 218, 32); */
 }
 
 .card {
@@ -387,6 +389,11 @@ color: #ff0000;
     margin-bottom: 3rem;
     width: 100%;
   }
+
+  .service-header{
+   
+    padding: 0rem 1rem;
+    }
 
 
 
