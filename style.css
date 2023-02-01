@@ -267,6 +267,7 @@ body {
   width: 30%;
   border: 1px solid #ff0000;
   padding: 2rem 2rem;
+  border-radius: 0.25rem;
 }
 
 .services-icon i {
@@ -403,7 +404,7 @@ align-items: center;
   }
 }
 
-/* .reveal{
+.reveal{
   position: relative;
   transform: translateX(150px);
   opacity: 0;
@@ -412,4 +413,4 @@ align-items: center;
 .reveal.active{
   transform: translateX(0);
   opacity: 1;
-} */
+}
