@@ -76,24 +76,7 @@ body {
   cursor: pointer;
 }
 
-.links {
-  height: 0;
-  overflow: hidden;
-}
 
-.showLinks {
-  height: 10rem;
-  overflow: visible;
-}
-
-.links ul li {
-  list-style: none;
-}
-
-.links ul li a {
-  text-decoration: none;
-  margin-bottom: 1rem;
-}
 
 /* hero */
 .hero {
@@ -336,12 +319,38 @@ color: #ff0000;
 @media (max-width: 768px) {
   /* navbar */
   .navlinks {
-    display: none;
+    position: absolute;
+    top: 3rem;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 0;
+    overflow: hidden;
+  }
+
+  .navlinks.active {
+    height: 25rem;
+  }
+
+  .navlinks ul{
+    display: block;
+    width: fit-content;
+    opacity: 0;
+  }
+
+  .navlinks.active ul{
+    opacity: 1;
+  }
+
+  .navlinks ul li a{
+    margin-bottom: 2rem;
   }
 
   .menu {
     display: block;
   }
+
+
 
   /* about */
   .about {

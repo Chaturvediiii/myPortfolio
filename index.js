@@ -1,9 +1,8 @@
 let menu = document.querySelector(".menu");
-let links = document.querySelector(".links");
+let navLinks = document.querySelector(".navlinks");
 
 menu.addEventListener('click',function(){
-    
-links.classList.toggle(".showLinks")
+    navLinks.classList.toggle("active")
 })
 
 // animations
