@@ -86,6 +86,8 @@ padding: 0rem 1rem;
   margin-top: 7rem;
 }
 
+
+
 .hero::before {
   position: absolute;
   content: "";
@@ -349,13 +351,13 @@ color: #ff0000;
   }
 
   .navlinks ul li{
-    padding: 0.5rem;
+    padding: 0.75rem 1;
   }
 
   .navlinks.active ul{
     opacity: 1;
     animation: text 2s ;
-    background: transparent;
+ 
   }
 
   @keyframes text{
@@ -376,7 +378,9 @@ color: #ff0000;
   
 
   /* hero */
-
+  .hero-blur{
+    opacity: 0.4;
+  }
 
  /* about */
  .about-container {
