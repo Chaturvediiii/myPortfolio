@@ -19,7 +19,7 @@ body {
   position: relative;
   display: flex;
   justify-content: space-between;
-  margin: 1rem;
+padding: 0rem 1rem;
 }
 
 .navbar::before {
@@ -29,6 +29,12 @@ body {
   height: 100%;
   background-color: black;
   z-index: -1;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .logo h4 {
@@ -41,6 +47,7 @@ body {
 
 .navlinks{
   display: flex;
+
 }
 
 .navlinks ul {
@@ -49,29 +56,20 @@ body {
 
 .navlinks ul li {
   list-style: none;
+   padding: 1rem;
 }
 
 .navlinks ul li a {
   text-decoration: none;
-  margin-right: 1rem;
+
+
 }
 
 .navlinks ul li a:hover {
   color: #ff0000;
 }
 
-.contactMe {
-  padding: 0.5rem 1rem;
-  border-color: #ff0000;
-  cursor: pointer;
-  color: #ff0000;
-  background: transparent;
-}
 
-.contactMe:hover {
-  cursor: pointer;
-  color: #fff;
-}
 
 .menu {
   display: none;
@@ -102,7 +100,7 @@ body {
   width: 140px;
   height: 140px;
   border-radius: 50%;
-  /* padding: 0.25rem; */
+
   background-color: #ff0000;
 }
 
@@ -318,6 +316,10 @@ color: #ff0000;
 
   /* navbar */
 
+  .navbar{
+    padding:1rem;
+  }
+
   .navlinks {
     position: absolute;
     top: 3rem;
@@ -332,15 +334,22 @@ color: #ff0000;
     height: 25rem;
   }
 
+
+
   .navlinks ul{
     display: block;
     width: fit-content;
     opacity: 0;
   }
 
+  .navlinks ul li{
+    padding: 0.5rem;
+  }
+
   .navlinks.active ul{
     opacity: 1;
     animation: text 2s ;
+    background: transparent;
   }
 
   @keyframes text{
@@ -353,19 +362,15 @@ color: #ff0000;
     }
   }
 
-  .navlinks ul li a{
-    margin-bottom: 1.5rem;
-  }
 
   .menu {
     display: block;
   }
 
+  
+
   /* hero */
 
-  .hero{
-    margin-top: 13rem;
-  }
 
  /* about */
  .about-container {
