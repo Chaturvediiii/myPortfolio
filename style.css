@@ -340,17 +340,38 @@ color: #ff0000;
 
   .navlinks.active ul{
     opacity: 1;
+    animation: text 2s ;
+  }
+
+  @keyframes text{
+    0% {
+      transform: translateX(-100px);
+    }
+
+    100%{
+      transform: translateX(20px);
+    }
   }
 
   .navlinks ul li a{
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
   }
 
   .menu {
     display: block;
   }
 
+  /* hero */
+
+  .hero{
+    margin-top: 13rem;
+  }
+
  /* about */
+ .about-container {
+  padding: 3rem;
+  margin-top: 13rem;
+}
 
   .about {
     display: flex;
