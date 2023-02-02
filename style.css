@@ -19,7 +19,7 @@ body {
   position: relative;
   display: flex;
   justify-content: space-between;
-  margin: 2rem;
+  margin: 1rem;
 }
 
 .navbar::before {
@@ -235,13 +235,13 @@ display: flex;
   padding: 0rem 3rem;
   margin-bottom: 3rem;
 }
+
 .service-header{
 display: flex;
 flex-direction: column;
 justify-content: start;
 padding: 0rem 5.5rem;
 }
-
 
 .card-group {
   width: 90%;
